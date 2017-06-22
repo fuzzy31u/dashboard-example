@@ -19,15 +19,25 @@
         },
         {
             "isBuildCommand": true,
-            "command": "tsc",
+            "command": "webpack",
             "isShellCommand": true,
-            "args": [
-                "-p",
-                "./client"
-            ],
             "taskName": "build_client",
-            "suppressTaskName": true            
+            "suppressTaskName": true,
+            "options": {
+                "cwd": "${workspaceRoot}/client"
+            }
         }
+        // {
+        //     "isBuildCommand": true,
+        //     "command": "tsc",
+        //     "isShellCommand": true,
+        //     "args": [
+        //         "-p",
+        //         "./client"
+        //     ],
+        //     "taskName": "build_client",
+        //     "suppressTaskName": true            
+        // }
         // {
         //     "taskName": "tsc_watch",
         //     "command": "tsc",
