@@ -1,7 +1,7 @@
 {
     "extends": [
-        "tslint:recommended"
-        // "tslint-react"
+        "tslint:recommended",
+        "tslint-react"
     ],
     "rules": {
         "align": [
@@ -67,7 +67,7 @@
         "quotemark": [true, "single", "jsx-double"],
         "radix": true,
         "semicolon": [true, "always"],
-        // "switch-default": true,
+        "switch-default": true,
 
         "trailing-comma": false,
 

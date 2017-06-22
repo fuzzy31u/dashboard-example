@@ -1,0 +1,17 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "strictNullChecks": true,
+        "outDir": "./dist",      
+        // "rootDir": "./client",  
+        "sourceMap": true,
+        "jsx": "react",
+        "target": "es5",
+        "module": "commonjs"
+        // "module": "es2015"
+        // "lib": ["es6", "dom"]
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
