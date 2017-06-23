@@ -6,7 +6,7 @@ export interface Props {
 
 class App extends React.Component<Props, undefined> {
     public render() {
-        return <div>this is App Component</div>;
+        return <div>Hello {name}!</div>;
     }
 }
 

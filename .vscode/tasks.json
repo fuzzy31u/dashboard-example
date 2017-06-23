@@ -21,6 +21,10 @@
             "isBuildCommand": true,
             "command": "webpack",
             "isShellCommand": true,
+            "args": [
+                "--colors",
+                // "--progress"
+            ],
             "taskName": "build_client",
             "suppressTaskName": true,
             "options": {

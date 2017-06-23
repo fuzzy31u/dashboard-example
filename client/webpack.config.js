@@ -1,5 +1,5 @@
 module.exports = {
-    entry: "./index.tsx",
+    entry: "./src/index.tsx",
     output: {
         filename: "bundle.js",
         path: __dirname + "/dist"
@@ -8,7 +8,9 @@ module.exports = {
     resolve: {
         extensions: [
             ".ts",
-            ".tsx"
+            ".tsx",
+            ".js",
+            ".json"
         ]
     },
     module: {
@@ -21,6 +23,17 @@ module.exports = {
                 enforce: "pre",
                 test: "/\.js$/",
                 loader: "source-map-loader"
+            },
+            {
+                test: /\.html$/,
+                use: [
+                    {
+                        loader: "html-loader",
+                        options: {
+                            minimize: true
+                        }
+                    }
+                ]
             }
         ]
     },

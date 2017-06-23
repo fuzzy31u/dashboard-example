@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome",
+            "url": "file:///Users/a11621/develop/dashboard-example/client/index.html",
+            "webRoot": "${workspaceRoot}/client/index.html"
+        },
+        {
             "type": "node",
             "request": "launch",
             "name": "Launch",
