@@ -18,11 +18,21 @@
             "suppressTaskName": true
         },
         {
+            "command": "make",
+            "isShellCommand": true,
+            "args": [
+                "run"
+            ],
+            "showOutput": "always",
+            "taskName": "run_docker"
+        },
+        {
             "isBuildCommand": true,
             "command": "webpack",
             "isShellCommand": true,
             "args": [
-                "--colors",
+                // "--watch",
+                "--colors"
                 // "--progress"
             ],
             "taskName": "build_client",

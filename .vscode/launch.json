@@ -7,19 +7,21 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Launch Chrome",
-            "url": "file:///Users/a11621/develop/dashboard-example/client/index.html",
-            "webRoot": "${workspaceRoot}/client/index.html"
+            "name": "Chrome",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceRoot}/server/dist/index.html"
         },
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch",
+            "name": "Server",
             "program": "${workspaceRoot}/server/app.ts",
             "cwd": "${workspaceRoot}",
             "outFiles": [
-                "${workspaceRoot}/dist/*.js"
-            ]
+                "${workspaceRoot}/server/dist/*.js"
+            ],
+            "sourceMaps": true,
+            "preLaunchTask": "build_server"
         }
     ]
 }

@@ -6,7 +6,9 @@ app.get('/alive', (req, res) => {
     res.status(200).send({alive: Date.now()});
 });
 
-app.listen(80, () => {
+app.use(express.static(__dirname));
+
+app.listen(3000, () => {
     // tslint:disable-next-line:no-console
-    console.log('listening...');
+    console.log('listening...' + __dirname);
 });
